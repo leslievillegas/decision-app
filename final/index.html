@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splatoon App</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <fieldset>
+          <legend>Splatoon Abilities</legend>
+          <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" maxlength="10" required/>
+            <span id="usernameError" class="error"></span>
+          </div>
+          <br>
+          <div>
+              <label for="level">Level:</label>
+              <input type="number" id="level" min="1" max="999" required/>
+          </div>
+          <br>
+          <div>
+              <label for="weapon">Choose your weapon:</label>
+              <select id="weapon" required>
+                <option value="">-- Please choose weapon --</option>
+                <option value="Splat Roller">Splat Roller</option>
+                <option value="Splatter Shot">Splatter Shot</option>
+                <option value="Ink Brush">Ink Brush</option>
+                <option value="Eliter 4K">Eliter 4K</option>
+              </select>
+          </div>
+          <br>
+          <div>
+            <label for="ability">Choose Your Ability:</label>
+            <select id="ability" required>
+              <option value="">-- Please choose ability --</option>
+              <option value="Ink Saver">Ink Saver</option>
+              <option value="Ninja Squid">Ninja Squid</option>
+              <option value="Quick Respawn">Quick Respawn</option>
+              <option value="Respawn Punisher">Respawn Punisher</option>
+            </select>
+          </div>
+          <br> <br>
+          <button type="submit">Submit</button>
+          <span id="submitError" class="error"></span>
+        </fieldset>
+        <br>
+      </form>
+      <div id="tab-data">
+      </div>
+
+    <div id="output">
+    </div>
+
+</body>
+</html>
